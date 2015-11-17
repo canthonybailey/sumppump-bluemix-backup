@@ -1,0 +1,16 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: sumppumpmonitor
+  host: sumppumpmonitor
+  disk_quota: 1024M
+  services:
+  - Twilio-CAB
+  - sumppumpmonitor-cloudantNoSQLDB
+  - Monitoring and Analytics-7p
+  env:
+    NODE_RED_USERNAME: NodeRedEditor
+    NODE_RED_PASSWORD: NodeRedEditorPassword2015
+  command: node --max-old-space-size=384 node_modules/node-red/red.js --settings ./bluemix-settings.js -v
