@@ -20,6 +20,6 @@
         "node": "0.10.x"
     },
     "scripts": {
-      "start": "red.js"
+      "start": "node_modules/node-red/red.js"
     }
 }
