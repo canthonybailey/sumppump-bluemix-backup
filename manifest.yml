@@ -9,7 +9,7 @@ applications:
   services:
   - Twilio-CAB
   - sumppumpmonitor-cloudantNoSQLDB
-  - Monitoring and Analytics-7p
+ # - Monitoring and Analytics-7p
   env:
     NODE_RED_USERNAME: NodeRedEditor
     NODE_RED_PASSWORD: NodeRedEditorPassword2015
